@@ -1,0 +1,974 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.doggie-daycare {
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  color: #4b4b4b;
+}
+.doggie-daycare__header {
+  position: relative;
+  min-height: 800px;
+  padding: 26px 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__header {
+    padding: 26px 20px 0;
+  }
+}
+.doggie-daycare__background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doggie-daycare__header-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1096px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -128px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__header-content {
+    margin-bottom: 10px;
+  }
+}
+.doggie-daycare__top-bar {
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__top-bar {
+    flex-wrap: wrap;
+  }
+}
+.doggie-daycare__logo {
+  width: 174px;
+  max-width: 100%;
+}
+.doggie-daycare__contact-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__contact-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.doggie-daycare__hours, .doggie-daycare__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.doggie-daycare__icon {
+  width: 24px;
+  height: 24px;
+}
+.doggie-daycare__cta-button {
+  background-color: #f2726f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 34px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.doggie-daycare__cta-button:hover {
+  background-color: #ee4440;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__cta-button {
+    padding: 9px 20px;
+  }
+}
+.doggie-daycare__nav {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 42px;
+  margin-top: 27px;
+  width: 100%;
+  max-width: 1020px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 20px;
+  }
+}
+.doggie-daycare__nav-list {
+  display: flex;
+  gap: 39px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.doggie-daycare__nav-item {
+  display: flex;
+  align-items: center;
+}
+.doggie-daycare__nav-link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.doggie-daycare__nav-link:hover {
+  color: #5d62b5;
+}
+.doggie-daycare__nav-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+.doggie-daycare__social-icons {
+  display: flex;
+  gap: 22px;
+}
+.doggie-daycare__social-icon {
+  width: 24px;
+  height: 24px;
+}
+.doggie-daycare__paw-print {
+  align-self: flex-end;
+  width: 201px;
+  max-width: 100%;
+  margin-top: 457px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__paw-print {
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__main {
+  background-color: #f5f5f5;
+}
+.doggie-daycare__about {
+  margin-top: -80px;
+  padding: 95px 80px 0;
+  background-color: #5d62b5;
+  border-radius: 40px;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__about {
+    padding: 60px 20px 0;
+  }
+}
+.doggie-daycare__about-content {
+  max-width: 1022px;
+  margin: 0 auto;
+}
+.doggie-daycare__section-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.doggie-daycare__section-icon {
+  width: 26px;
+  height: 26px;
+}
+.doggie-daycare__section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+.doggie-daycare__about-heading {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.17;
+  margin: 29px 0 0;
+}
+.doggie-daycare__about-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 36px 0 0;
+}
+.doggie-daycare__about-image {
+  width: 100%;
+  border-radius: 40px;
+  margin: 67px 0 -120px;
+  box-shadow: 0 8px 16px rgba(38, 38, 38, 0.24);
+}
+@media (max-width: 991px) {
+  .doggie-daycare__about-image {
+    margin: 40px 0 -60px;
+  }
+}
+.doggie-daycare__promise {
+  padding: 225px 80px 100px;
+  max-width: 1022px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__promise {
+    padding: 100px 20px 60px;
+  }
+}
+.doggie-daycare__promise-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #000;
+  margin: 29px 0 0;
+}
+.doggie-daycare__promise-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 68px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__promise-features {
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__feature {
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__feature {
+    flex: 1 1 100%;
+  }
+}
+.doggie-daycare__feature-icon {
+  width: 63px;
+  height: 63px;
+}
+.doggie-daycare__feature-content {
+  flex: 1;
+}
+.doggie-daycare__feature-title {
+  color: #f2726f;
+  font-size: 19px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+.doggie-daycare__feature-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.doggie-daycare__cta {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 128px;
+  padding: 144px 80px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__cta {
+    margin-top: 60px;
+    padding: 100px 20px;
+  }
+}
+.doggie-daycare__cta-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doggie-daycare__cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 409px;
+  text-align: center;
+}
+.doggie-daycare__cta-heading {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.17;
+  color: #fff;
+  margin: 0 0 45px;
+}
+.doggie-daycare__services {
+  padding: 105px 80px;
+  max-width: 1022px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__services {
+    padding: 60px 20px;
+  }
+}
+.doggie-daycare__services-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #000;
+  margin: 29px 0 0;
+}
+.doggie-daycare__services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 78px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__services-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__service {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 56px 46px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__service {
+    padding: 40px 20px;
+  }
+}
+.doggie-daycare__service-icon {
+  width: 63px;
+  height: 63px;
+}
+.doggie-daycare__service-title {
+  color: #f2726f;
+  font-size: 19px;
+  font-weight: 900;
+  margin: 33px 0 20px;
+}
+.doggie-daycare__service-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.doggie-daycare__learn-more {
+  display: block;
+  width: 124px;
+  margin: 66px auto 0;
+  padding: 20px 25px;
+  background-color: #f2726f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.doggie-daycare__learn-more:hover {
+  background-color: #ee4440;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__learn-more {
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__appointment {
+  position: relative;
+  min-height: 980px;
+  margin-top: 122px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__appointment {
+    margin-top: 60px;
+  }
+}
+.doggie-daycare__appointment-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doggie-daycare__appointment-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1012px;
+  margin: 0 auto;
+  padding: 130px 70px 210px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__appointment-content {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+}
+.doggie-daycare__appointment-decor {
+  position: absolute;
+  top: 0;
+  left: -257px;
+  width: 1525px;
+  height: 991px;
+}
+.doggie-daycare__appointment-form-wrapper {
+  flex: 0 0 66%;
+  background-color: #5d62b5;
+  border-radius: 40px;
+  padding: 76px 57px;
+  z-index: 10;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__appointment-form-wrapper {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+.doggie-daycare__appointment-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 47px;
+}
+.doggie-daycare__form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__form-row {
+    flex-direction: column;
+  }
+}
+.doggie-daycare__form-group {
+  flex: 1;
+}
+.doggie-daycare__form-input {
+  width: 100%;
+  padding: 20px 24px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+.doggie-daycare__form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.doggie-daycare__form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.doggie-daycare__form-textarea {
+  height: 150px;
+  resize: vertical;
+}
+.doggie-daycare__submit-button {
+  display: block;
+  width: 100%;
+  margin-top: 29px;
+  padding: 20px;
+  background-color: #f2726f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.doggie-daycare__submit-button:hover {
+  background-color: #ee4440;
+}
+.doggie-daycare__stats {
+  flex: 0 0 34%;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__stats {
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__stats-heading {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 55px;
+}
+.doggie-daycare__stats-number {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__stats-number {
+    font-size: 60px;
+  }
+}
+.doggie-daycare__stats-text {
+  font-size: 19px;
+  font-weight: 900;
+  margin: 40px 0 0;
+}
+.doggie-daycare__gallery {
+  background-color: #5d62b5;
+  color: #fff;
+  padding: 95px 80px 0;
+  border-radius: 40px 40px 0 0;
+  margin-top: -80px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__gallery {
+    padding: 60px 20px 0;
+    margin-top: -40px;
+  }
+}
+.doggie-daycare__gallery-heading {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 29px 0 63px;
+}
+.doggie-daycare__gallery-nav {
+  max-width: 764px;
+  margin: 0 auto;
+}
+.doggie-daycare__gallery-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__gallery-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.doggie-daycare__gallery-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+.doggie-daycare__gallery-link:hover {
+  opacity: 0.8;
+}
+.doggie-daycare__gallery-icon {
+  width: 204px;
+  height: 4px;
+  margin-top: 20px;
+}
+.doggie-daycare__live-stream {
+  position: relative;
+  margin-top: 49px;
+  height: 480px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__live-stream {
+    margin-top: 40px;
+    height: 300px;
+  }
+}
+.doggie-daycare__live-stream-video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doggie-daycare__live-stream-overlay {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__live-stream-overlay {
+    right: 20px;
+  }
+}
+.doggie-daycare__live-stream-icon {
+  position: absolute;
+  width: 1247px;
+  height: 624px;
+  left: -1141px;
+  bottom: -550px;
+  border-radius: 40px;
+}
+.doggie-daycare__live-indicator {
+  background-color: #29c3be;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 3px 19px;
+  border-radius: 50px;
+}
+.doggie-daycare__testimonials {
+  padding: 235px 80px 100px;
+  max-width: 1022px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__testimonials {
+    padding: 100px 20px 60px;
+  }
+}
+.doggie-daycare__testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__testimonials-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.doggie-daycare__testimonials-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #000;
+  max-width: 50%;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__testimonials-heading {
+    max-width: 100%;
+  }
+}
+.doggie-daycare__testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.doggie-daycare__testimonial {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 43px;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__testimonial {
+    padding: 30px;
+  }
+}
+.doggie-daycare__testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 51px;
+}
+.doggie-daycare__testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.doggie-daycare__testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.doggie-daycare__testimonial-author {
+  color: #f2726f;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+.doggie-daycare__impact {
+  background-color: #29c3be;
+  padding: 0 80px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact {
+    padding: 0 20px;
+  }
+}
+.doggie-daycare__impact-content {
+  max-width: 1022px;
+  margin: -80px auto 0;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact-content {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+}
+.doggie-daycare__impact-header {
+  flex: 0 0 45%;
+}
+.doggie-daycare__impact-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  margin: 28px 0 0;
+}
+.doggie-daycare__impact-image {
+  flex: 0 0 55%;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact-image {
+    margin-top: 40px;
+  }
+}
+.doggie-daycare__impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 78px 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact-stats {
+    padding: 40px 0;
+  }
+}
+.doggie-daycare__stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+.doggie-daycare__stat-icon {
+  width: 76px;
+  height: 76px;
+}
+.doggie-daycare__stat-content {
+  display: flex;
+  flex-direction: column;
+}
+.doggie-daycare__stat-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+}
+.doggie-daycare__stat-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5d62b5;
+  margin: 0;
+}
+.doggie-daycare__impact-cta {
+  background-color: #5d62b5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 73px;
+  margin-bottom: 134px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact-cta {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+  }
+}
+.doggie-daycare__impact-cta-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  max-width: 70%;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__impact-cta-text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.doggie-daycare__footer {
+  background-color: #fff;
+  padding: 160px 80px 0;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__footer {
+    padding: 80px 20px 0;
+  }
+}
+.doggie-daycare__footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.doggie-daycare__footer-info {
+  max-width: 300px;
+}
+.doggie-daycare__footer-logo {
+  width: 174px;
+  max-width: 100%;
+  height: auto;
+}
+.doggie-daycare__footer-description {
+  font-size: 14px;
+  line-height: 1.57;
+  margin: 23px 0;
+}
+.doggie-daycare__payment-methods {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+.doggie-daycare__footer-nav {
+  display: flex;
+  gap: 80px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__footer-nav {
+    gap: 40px;
+  }
+}
+.doggie-daycare__footer-nav-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 28px;
+}
+.doggie-daycare__footer-nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.doggie-daycare__footer-nav-link {
+  color: #4b4b4b;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 2;
+  transition: color 0.3s ease;
+}
+.doggie-daycare__footer-nav-link:hover {
+  color: #5d62b5;
+}
+.doggie-daycare__footer-contact {
+  max-width: 250px;
+}
+.doggie-daycare__footer-contact-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 28px;
+}
+.doggie-daycare__footer-address, .doggie-daycare__footer-phone, .doggie-daycare__footer-email {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 16px;
+  font-style: normal;
+}
+.doggie-daycare__footer-icon {
+  width: 16px;
+  height: 16px;
+}
+.doggie-daycare__footer-hours {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.doggie-daycare__footer-bottom {
+  background-color: #5d62b5;
+  color: #fff;
+  text-align: center;
+  padding: 21px 0;
+  margin-top: 98px;
+  width: 199vh;
+  margin-left: -80px;
+}
+@media (max-width: 991px) {
+  .doggie-daycare__footer-bottom {
+    margin-top: 60px;
+  }
+}
+.doggie-daycare__footer-tagline {
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+.doggie-daycare__footer-copyright {
+  font-size: 12px;
+  margin: 0;
+}
+.doggie-daycare__footer-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.doggie-daycare__footer-link:hover {
+  opacity: 0.8;
+}
+.doggie-daycare .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.doggie-daycare__impact-image {
+  width: 0;
+}/*# sourceMappingURL=style.css.map */
